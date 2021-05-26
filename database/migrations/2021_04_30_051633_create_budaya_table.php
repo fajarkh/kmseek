@@ -16,7 +16,7 @@ class CreateBudayaTable extends Migration
         Schema::create('budaya', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->nullable()->unsigned();
-            $table->foreign('user_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->string('macam_budaya')->nullable();
             $table->timestamps();
         });
