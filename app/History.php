@@ -15,6 +15,6 @@ class History extends Model
      * @var array
      */
     protected $fillable = [
-        'judul_history', 'konten','id_kategori','gambar_path',
+        'judul_history', 'konten','id_kategori','gambar_path','gambar_name',
     ];
 }

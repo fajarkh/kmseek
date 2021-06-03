@@ -18,7 +18,8 @@ class CreateHistoryTable extends Migration
             $table->string('judul_history');
             $table->text('konten');
             $table->string('id_kategori');
-            $table->string('gambar_path');
+            $table->string('gambar_name')->nullable();
+            $table->string('gambar_path')->nullable();
             $table->timestamps();
         });
     }
